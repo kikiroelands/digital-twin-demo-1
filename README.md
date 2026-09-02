@@ -76,6 +76,11 @@ Additionally, because each part of the application is defined in its own service
 ### Speaking of testing, where are the tests?
 The tests for the backend services are located in the `backend/tests` folder. Each service and its corresponding endpoints should have their own test files. We use the `pytest` framework for testing. 
 
+### Delegating code testing to robots
+These `pytest` tests can also be executed by computers remotely. Take a look at [.github/workflows/test.yml](this file) in this repository. This is an _Action Workflow_ that specifies something that a robot needs to do as soon as some trigger happens to the remote repository. In this case, as soon as someone pushes to main, or pull requests into main, we run the tests. That's nice, because we can check if tests pass before merging (remember _Definition of Done_ from the agile workshop?). Also, we can focus on important things like maintaining a consistent caffeine intake while GitHub robots take care of testing your code and reporting back to you as soon as they're done.
+
+You may need a GitHub Pro license for doing this, though, but with your University e-mail, you can apply for free GitHub Education benefits, which include GitHub Actions!
+
 ## Automatic checking of code quality and style
 We also have added support for `ruff`, a fast code linter that will check that the code adheres to the same style everywhere, and will check for vulnerabilities and possible bugs. You can invoke a check with:
 
@@ -95,6 +100,8 @@ pixi run ruff format
 ```
 
 For more info, check out the [ruff documentation](https://docs.astral.sh/ruff/).
+
+Related to the previous section on robots doing stuff for you. You can probably also let Ruff run through GitHub actions. 
 
 ## Seeing the application in action
 To see the application in action, you can run the backend and frontend services. You can do this by running the following commands in separate terminal windows:
