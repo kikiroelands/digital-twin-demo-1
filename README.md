@@ -2,7 +2,7 @@
 [![Static Badge](https://img.shields.io/badge/Powered_by-Pixi-%23facc15)](https://pixi.prefix.dev/latest/)
 [![Static Badge](https://img.shields.io/badge/Built_with-Lit-%23334eff?logo=lit&logoColor=%23334eff&labelColor=white)](https://lit.dev/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-
+[![Backend Tests](https://github.com/Computational-Biology-TUe/digital-twin-demo/actions/workflows/test.yml/badge.svg)](https://github.com/Computational-Biology-TUe/digital-twin-demo/actions/workflows/test.yml)
 
 # Digital Twin Demo Application
 This repository contains a demo application for the Digital Twin in Healthcare course. During the workshop, we'll be discussing the entire application and how it's structured. You will be able to use this application as a template or starting point for your own projects. 
