@@ -2,7 +2,7 @@
 authors = ["max-de-rooij <54850292+max-de-rooij@users.noreply.github.com>"]
 channels = ["conda-forge"]
 name = "digital-twin-demo"
-platforms = ["osx-arm64", "win-64"]
+platforms = ["osx-arm64", "win-64", "linux-64"]
 version = "0.1.0"
 
 [tasks]
